@@ -1,0 +1,141 @@
+﻿
+* body {
+    margin: 0;
+    padding:0;
+}
+
+.top-background {
+    background-image: linear-gradient(rgba(0,0,0,0.5 ),rgba(0,0,0,0.5)),url(Foto1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+ul{
+    float:right;
+    list-style-type:none;
+    margin-top:25px;
+}
+ul li {
+    display:inline-block;
+    font-size:20px;
+}
+ul li a{
+    text-decoration:none;
+    color:white;
+    padding:5px 20px;
+    transition:0.6s ease;
+}
+ul li a:hover{
+    border-bottom: 1px solid white;
+}
+.logo img{
+    float:left;
+    width:100px;
+    height:auto;
+}
+.main{
+    max-width:1200px;
+    margin:auto;
+}
+.page-title {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    color: white;
+    font-size: 28px;
+    letter-spacing: 10px;
+    text-shadow: 0 0 5px #154b0f;
+}
+.palette {
+    position: absolute;
+    top: 38%;
+    left: 44%;
+    font-size: 30px;
+    color: white;
+    letter-spacing: 15px;
+    cursor: pointer;
+}
+.description {
+    position: absolute;
+    top: 40%;
+    left: 6%;
+    font-variant: small-caps;
+    font-size: 20px;
+    letter-spacing: 15px;
+    margin: 0.5px;
+    color: white;
+    text-shadow: 0 0 6px #09280f;
+}
+section{
+    background-color:rgba(79, 92, 58, 0.90);
+    padding-bottom:20px;
+    padding-left:50px;
+
+  
+}
+.container{
+    width:80%;
+    height:50vh;
+    padding: 0 8%;
+    color:white;
+    text-shadow:2px 2px 5px #0e1a11;
+}
+    .container h1 {
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 20px;
+        font-weight: 600;
+        position: relative;
+        letter-spacing: 15px;
+        border-radius: 10px;
+        border: 4px double #22651b;
+        background: white;
+    }
+    .container h1::after {
+        content: '';
+        background: darkolivegreen;
+        width: 100px;
+        height: 5px;
+        font-size: 20px;
+    }
+
+    .row {
+        display: flex;
+        text-align: center;
+        padding: 10px;
+        width: auto;
+    }
+.service{
+    text-align:center;
+    padding: 25px 10px;
+    border-radius:5px;
+    font-size:17px;
+    border:double;
+    cursor:pointer;
+    background:#303c1a;
+}
+    .service i {
+        font-size:50px;
+        margin-bottom: 10px;
+        color:darkolivegreen;
+    }
+.service h2{
+    font-weight:600;
+    margin-bottom:8px;
+}
+.service:hover {
+    background:white;
+    color:darkolivegreen;
+    transform:scale(1.05);
+}
+
+
+
+
+
+
+
+
+
