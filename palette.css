@@ -133,7 +133,39 @@ section{
     color:darkolivegreen;
     transform:scale(1.05);
 }
+.samples{
+    flex-direction: column;
+    text-align: center;
+    background-color: palevioletred;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    height:100%;
+}
+.Featured {
+    width:90%;
+    display: grid;
+    grid-template-columns:2fr 2fr 2fr;
+    grid-gap:3%;
 
+
+}
+.Work {
+    width:120%;
+    height:100%;
+    color:black;
+
+}
+.Work img {
+    width:370px;
+    height:500px;
+    cursor:pointer;
+    max-height:auto;
+    border-radius:20px;
+}
+.Work a{
+    color:black;
+}
 
 
 
