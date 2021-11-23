@@ -70,7 +70,8 @@ ul li a:hover{
 }
 section{
     background-color:rgba(79, 92, 58, 0.90);
-    background-position: cover;
+    background-size:cover;
+    background-position: center;
     height:100%;
     padding-top: 75px;
 
