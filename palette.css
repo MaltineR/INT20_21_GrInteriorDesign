@@ -166,6 +166,41 @@ section{
 .Work a{
     color:black;
 }
+.story-section{
+    display:flex;
+    padding-top:3px;
+    padding-top:20px;
+    flex-direction:row-reverse;
+    background:right;
+    background-color:white;
+    color:black;
+}
+.section-text h2{
+    text-align:center;
+    letter-spacing:15px;
+    margin-top: 10px;
+    text-transform:uppercase;
+    font-size:28px;
+    color:#88941e;
+}
+.section-text p{
+    padding-left:40px;
+    text-align:left;
+    float:left;
+    border-style: dashed;
+    border-color:#88941e;
+    border-width:2px;
+    padding:5px;
+    
+}
+.box-feature img {
+    padding-right:40px;
+    margin-top:1px;
+    margin-bottom:20px ;
+    height:30%;
+    width:40%;
+    float:right;
+}
 
 
 
