@@ -185,7 +185,9 @@ section{
 }
 .section-text p{
     padding-left:40px;
+    font-size:15px;
     text-align:left;
+    text-shadow:lightgrey;
     float:left;
     border-style: dashed;
     border-color:#88941e;
