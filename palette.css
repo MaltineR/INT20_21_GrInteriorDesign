@@ -20,15 +20,16 @@ ul{
 ul li {
     display:inline-block;
     font-size:20px;
+    border-style:solid;
+    border-radius:5px;
+    border-color:white;
+    border-width: 1px;
 }
 ul li a{
     text-decoration:none;
     color:white;
     padding:5px 20px;
     transition:0.6s ease;
-}
-ul li a:hover{
-    border-bottom: 1px solid white;
 }
 .logo img{
     float:left;
@@ -69,7 +70,7 @@ ul li a:hover{
     text-shadow: 0 0 6px #09280f;
 }
 section{
-    background-color:rgba(79, 92, 58, 0.90);
+    background-color:rgba(79, 92, 58, 0.829);
     background-size:cover;
     background-position: center;
     height:100%;
@@ -116,7 +117,7 @@ section{
     font-size:20px;
     border:double;
     cursor:pointer;
-    background:#303c1a;
+    background:#303c1acb;
     background-position: cover;
 }
     .service i {
@@ -138,10 +139,20 @@ section{
     text-align: center;
     background-color: palevioletred;
     background-position: center;
-    background-repeat:no-repeat;
+    background-repeat:repeat;
     background-size:cover;
-    height:100%;
+    height:180vh;
 }
+.samples h2{
+    color:white;
+    letter-spacing:7px ;
+
+}
+.samples p {
+    color:white;
+    letter-spacing:10px;
+}
+
 .Featured {
     width:90%;
     display: grid;
@@ -153,7 +164,7 @@ section{
 .Work {
     width:120%;
     height:100%;
-    color:black;
+    color:grey;
 
 }
 .Work img {
@@ -162,9 +173,15 @@ section{
     cursor:pointer;
     max-height:auto;
     border-radius:20px;
+    opacity:0.9;
+}
+.work img:hover{
+    cursor:pointer;
+    transform:translateY(-15px);
+    transition: all ease 0.5s;
 }
 .Work a{
-    color:black;
+    color:darkslategrey;
 }
 .story-section{
     display:flex;
@@ -207,13 +224,13 @@ section{
     height:300vh;
 }
 .tables h3 {
-    text-align: center;
+    text-align:left;
     font-size:20px;
     background-color:rgba(51, 82, 51, 0.466);
-       color:black
+    color:black
 }
 .tables p {
-    text-align: center;
+    text-align: left;
     font-size:20px;
     color:black;
 }
