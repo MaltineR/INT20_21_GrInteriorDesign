@@ -177,8 +177,6 @@ section{
     color:black;
 }
 .section-text h2{
-    text-align:center;
-    letter-spacing:15px;
     margin-top: 10px;
     text-transform:uppercase;
     font-size:28px;
@@ -188,42 +186,51 @@ section{
 .section-text p{
     padding-left:70px;
     margin-left:20px;
-    font-size:15px;
+    font-family:cursive;
     text-align:left;
     text-shadow: 3px grey;
-    float:left;
     border-style: double;
     border-color:#88941e;
+    padding:20px;
     
 }
 .box-feature img {
     padding-right:70px;
     margin-top:0px;
     margin-bottom:15px ;
-    height:30%;
-    width:40%;
     float:right;
 }
-*:before,
-*:after {
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
 
-}
-a{
-    text-decoration:none;
-    transition: all .3s ease-in-out;
 
-}
-.testimonals {
-    position:relative;
-    background-color: magenta;
-    padding: 2.3rem 1.5rem 2.5rem;
-    margin:3rem 1.5rem;
-    border-radius:8px;
-    text-align:center;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
