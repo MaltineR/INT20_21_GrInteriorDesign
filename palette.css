@@ -33,7 +33,7 @@ ul li a{
 }
 .logo img{
     float:left;
-    width:100px;
+    width:60px;
     height:auto;
 }
 .main{
@@ -117,7 +117,7 @@ section{
     font-size:20px;
     border:double;
     cursor:pointer;
-    background:#303c1acb;
+    background:#303c1ade;
     background-position: cover;
 }
     .service i {
@@ -263,6 +263,40 @@ section{
 .social a:hover{
     opacity:0.9;
 }
+.communication{
+    width:88%;
+    margin: 0 auto;
+    padding:1%;
+}
+.text-center {
+    text-align:center;
+    color:white;
+    letter-spacing:7px;
+}
+.contactus {
+    background-color:grey;
+    padding:4% 0;
+}
+.contact-form{
+    width:43%;
+    margin:1%;
+    padding:2%;
+    float:left;
+    background-color:whitesmoke;
+    border-radius:15px;
+}
+
+ input[type=text],select,textarea {
+     width:100%;
+     padding:12px;
+     border:1px solid white;
+     border-radius:5px;
+     box-sizing:border-box;
+     margin-top:6px;
+     margin-bottom:16px;
+     resize:vertical;
+ }
+
 .footer ol {
     margin-top:0;
     text-align:center;
@@ -291,6 +325,7 @@ section{
     font-size:15px;
     color:darkslategrey;
 }
+
 
 
 

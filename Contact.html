@@ -5,13 +5,32 @@
     <meta charset="utf-8" />
     <title>DesignIdeas</title>
     <link rel="stylesheet" href="palette.css" />
-    <script src="https://kit.fontawesome.com/ccbf4afaaa.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ccbf4afaaa.js" crossorigin="anonymous"></script> 
     <style>
-        
+        .communication1{
+    width:50%;
+    margin-top:20px ;
+    padding:1%;
+}
+.contactus1 {
+    background-color:grey;
+    padding:4% 0;
+}
+.contact-form1{
+    width:43%;
+    margin-top:3px%;
+    padding:2%;
+    float:right;
+    background-color:whitesmoke;
+    border-radius:15px;
+}
     </style>
 </head>
 <body>
     <header> 
+        <div class="logo">
+            <img src="logo.png" />
+        </div>
             <ul>
                 <li><a href="palette.html">Home</a></li>
                 <li><a href="services.html">Services</a></li>
@@ -19,98 +38,61 @@
                 <li><a href="Pricing.html">Pricing</a></li>
                 <li><a href="Contact.html">Contact us </a></li>
             </ul>
-            <section class="contact">
-                <div class="content">
-                    <h2>Contact Us</h2>
-        
-                </div>
-                <div class="container">
-                    <div class="contactInfo">
-                        <div class="box">
-                            <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i> </div>
-                            <div class="text">
-                                <adress>
-                                <p>Prishtine , <br>Magjistralja Prishtine,<br> 100000 </p>
-                                </adress>
+            <section class="contactus">
+                </div class="communication">
+                   <h2 class="text-center">Contact form</h2>
+                   </div>
+                <div class="contact-form">
+                    <form action="#">
+                        <label for="fname">First Name</label>
+                        <input type="text" name="firstname" required="required">
+
+                        <label for="lname">Last Name</label>
+                        <input type="text" name="lastname" required="required">
+
+                        <label for="email">Email</label>
+                        <input type="email" name="firstname" required="required" placeholder="your email...">
+                        <div class="InputBox">
+                            <span>Tybe your Message...</span>
+                            <textarea required="required"></textarea>
+                        </div>
+                        <div class="InputBox">
+                            <input type="submit" name="" value="Send">
+                            
+                        </div>
+                     </section>
+                     <section class="contactus1">
+                    </div class="communication1">
+                       </div>
+                    <div class="contact-form1">
+                        <form action="#">
+                            <div class="box">
+                                <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i> </div>
+                                <div class="text">
+                                    <adress>
+                                    <p>Prishtine , <br>Magjistralja Prishtine,<br> 100000 </p>
+                                    </adress>
+                                </div>
+                                <div class="box">
+                                <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i> </div>
+                                <div class="text">
+                                    <h3>Phone</h3>
+                                    <p>+38349578456</p>
+                                </div>
                             </div>
-                            <div class="text"><div class="icon">
-                            <h3>Find us here</h3>
-                           
+                            <div class="box">
+                                <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i> </div>
+                                <div class="text">
+                                    <h3>Email</h3>
+                                    <p> Palette@desing.org </p>
+                                </div>
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2937.9534326042776!2d21.127524415424357!3d42.577510879172856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13549d24b348938d%3A0x60d92d0bf422400f!2sRruga%20Magjistralja%20Prishtin%C3%AB-Ferizaj!5e0!3m2!1sen!2srs!4v1638116397373!5m2!1sen!2srs" width="200" height="125" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                         </div>
-                        </div>
-                        <div class="box">
-                            <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i> </div>
-                            <div class="text">
-                                <h3>Phone</h3>
-                                <p>+38349578456</p>
-                            </div>
-                        </div>
-                        <div class="box">
-                            <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i> </div>
-                            <div class="text">
-                                <h3>Email</h3>
-                                <p> Palette@desing.org </p>
-                            </div>
-                        </div>
                     </div>
-                    <div class="contactform">
-                        <form>
-                            <h2> Send Message </h2>
-                            <div class="InputBox">
-                                <input type="text" name="" required="required">
-                                <span>Full Name</span>
-                            </div>
-                            <div class="InputBox">
-                                <input type="email" name="" required="required">
-                                <span>Email</span>
-                            </div>
-                            <div class="InputBox">
-                                <textarea required="required"></textarea>
-                                <span>Tybe your Message...</span>
-                            </div>
-                            <div class="InputBox">
-                                <input type="submit" name="" value="Send">
+                </form>
+                            
                                 
                             </div>
-                        </form>
-                    </div>
-                </div>
-        
-                   
-            </section>
-
-            <footer>
-                <section class="footer">
-                    <div class="social">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-snapchat"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        
-                    </div>
-                    <ol class="listat">
-                        <li> 
-                            <a href="palette.html">Home</a>
-                        </li>
-                        <li> 
-                          <a href="services.html">Services</a>
-                      </li>
-                      <li> 
-                          <a href="DesignIdeas.html">Design ideas</a>
-                      </li>
-                      <li> 
-                          <a href="Pricing.html">Pricing</a>
-                      </li>
-                      <li> 
-                          <a href="Contact.html">Contact Us</a>
-                      </li>
-  
-  
-                    </ol>
-                    <p class="copyright">
-                        Palette @ 2021
-                    </p>
-                </section>
-            </footer>
+                            <br>
+                         </section>
          
