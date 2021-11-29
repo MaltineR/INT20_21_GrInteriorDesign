@@ -145,6 +145,7 @@ section{
 .samples h2{
     color:white;
     letter-spacing:7px ;
+    font-size:30px;
 
 }
 .samples p {
@@ -217,22 +218,36 @@ section{
     float:right;
 }
 .tables {
-    background-color:#3c4b21b7;
+    background-color:rgba(70, 104, 42, 0.63);
     background-position:center;
-    background-size:cover;
-    height:300vh;
+    background-size:contain;
+    padding-left:40px;
+    padding-right:30px;
+    height:310vh;
     width:100;
 }
+.tables h2{
+    text-align:center;
+    font-size:30px;
+    color:white;
+    letter-spacing:8px;
+    background-color: rgb(139, 202, 109);
+}
+    
 .tables h3 {
-    text-align:RIGHT;
+    text-align:left;
     font-size:20px;
-    background-color:rgba(51, 82, 51, 0.466);
-    color:black
+    color:rgb(48, 75, 48);
+    font-family:cursive;
 }
 .tables p {
-    text-align:right;
+    text-align:left;
     font-size:20px;
-    color:black;
+    color:rgb(216, 241, 216);
+    font-family: monospace;
+    font-weight:20px;
+
+
 }
 
 .footer{
