@@ -33,7 +33,7 @@ ul li a{
 }
 .logo img{
     float:left;
-    width:60px;
+    width:50px;
     height:auto;
 }
 .main{
@@ -69,7 +69,7 @@ ul li a{
     text-shadow: 0 0 6px #09280f;
 }
 section{
-    background-color:rgba(79, 92, 58, 0.829);
+    background-color:rgba(90, 100, 70, 0.877);
     background-size:cover;
     background-position: center;
     height:100%;
@@ -82,22 +82,23 @@ section{
     height:50vh;
     padding: 0 8%;
     color:white;
-    text-shadow:2px 2px 5px #0e1a11;
+    text-shadow:4px 4px 7px #0e1a11;
 }
     .container h1 {
         text-align: center;
-        font-size: 40px;
+        font-size: 25px;
         margin-bottom: 20px;
-        font-weight: 600;
+        font-weight:800;
         position: relative;
         letter-spacing: 15px;
         border-radius: 10px;
         border: 4px double #22651b;
         background:white;
+        text-shadow: 0 0 7px black;
     }
     .container h1::after {
         content: '';
-        background: darkolivegreen;
+        background: rgba(85, 107, 47, 0.726);
         width: 100px;
         height: 5px;
         font-size: 20px;
@@ -116,7 +117,7 @@ section{
     font-size:20px;
     border:double;
     cursor:pointer;
-    background:#303c1ade;
+    background:#465231d0;
     background-position: cover;
 }
     .service i {
@@ -136,7 +137,7 @@ section{
 .samples{
     flex-direction: column;
     text-align: center;
-    background-color:#303c1abb;
+    background-color:rgba(90, 100, 70, 0.877);
     background-position: center;
     background-repeat:repeat;
     background-size:cover;
@@ -204,11 +205,12 @@ section{
     padding-left:70px;
     margin-left:20px;
     font-family:cursive;
+    border-style:dashed;
+    border-color:rgb(69, 95, 42);
     text-align:left;
     text-shadow: 3px grey;
-    border-style: double;
-    border-color:#88941e;
-    padding:20px;
+    font-size:13px;
+
     
 }
 .box-feature img {
@@ -218,36 +220,49 @@ section{
     float:right;
 }
 .tables {
-    background-color:rgba(70, 104, 42, 0.63);
-    background-position:center;
-    background-size:contain;
     padding-left:40px;
     padding-right:30px;
-    height:310vh;
-    width:100;
+    height:340vh;
+    width:200;
 }
 .tables h2{
     text-align:center;
     font-size:30px;
     color:white;
     letter-spacing:8px;
-    background-color: rgb(139, 202, 109);
+    background-color: rgba(52, 59, 48, 0.616);
 }
     
 .tables h3 {
     text-align:left;
     font-size:20px;
-    color:rgb(48, 75, 48);
+    color:rgb(24, 58, 24);
     font-family:cursive;
 }
 .tables p {
     text-align:left;
     font-size:20px;
-    color:rgb(216, 241, 216);
+    color:rgb(240, 250, 240);
+    font-family: monospace;
+    font-weight:20px;
+    text-shadow: 0 0 5px black;
+    border-left:2px double rgb(24, 58, 24);
+    border-bottom:2px double rgb(24, 58, 24);
+}
+.tables dl {
+    text-align:left;
+    font-size:17px;
+    color:rgb(40, 58, 40);
     font-family: monospace;
     font-weight:20px;
 
-
+}
+.tables ol {
+    text-align:left;
+    font-size:17px;
+    color:rgb(40, 66, 40);
+    font-family: monospace;
+    font-weight:20px;
 }
 
 .footer{
