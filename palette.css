@@ -246,8 +246,8 @@ section{
     font-family: monospace;
     font-weight:20px;
     text-shadow: 0 0 5px black;
-    border-left:2px double rgb(24, 58, 24);
-    border-bottom:2px double rgb(24, 58, 24);
+    border-left:2px outset rgb(24, 58, 24);
+    border-bottom:2px outset rgb(24, 58, 24);
 }
 .tables dl {
     text-align:left;
