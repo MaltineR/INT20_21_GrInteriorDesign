@@ -7,23 +7,100 @@
     <link rel="stylesheet" href="palette.css" />
     <script src="https://kit.fontawesome.com/ccbf4afaaa.js" crossorigin="anonymous"></script> 
     <style>
-        .communication1{
-    width:50%;
-    margin-top:20px ;
-    padding:1%;
-}
-.contactus1 {
-    background-color:grey;
-    padding:4% 0;
-}
-.contact-form1{
-    width:43%;
-    margin-top:3%;
-    padding:2%;
-    float:right;
-    background-color:whitesmoke;
-    border-radius:15px;
-}
+        *{
+            margin:0;
+            padding:60;
+            box-sizing:border-box;
+        }
+        body{
+            min-height:50vh;
+            width:100%;
+            background-color:#3c4b21b7;
+            background-size:cover;
+            
+        }
+        .contact-section{
+            width:90%;
+            position: absolute;
+            top:10%;
+            left:8%;
+            bottom:15%;
+            display:flex;
+            align-items:center;
+        }
+        .contact-info{
+            color:lightgrey;
+            max-width:300px;
+            line-height:65px;
+            font-size:18px;
+        }
+        .contact-info i{
+            margin-right:20px;
+            font-size:25px;
+        }
+        .contact-form{
+            max-width:700px;
+            margin-right:50px;
+        }
+        .contact-info,.contact-form iframe{
+            flex:1;
+        }
+        .contact-form h2{
+            color:white;
+            text-align:center;
+            font-size:25px;
+            text-transform:uppercase;
+            margin-bottom:30px;
+        }
+        .contact-form .text-box {
+            background:white;
+            color:grey;
+            border:none;
+            height:50px;
+            padding:12px;
+            font-size:15px;
+            border-radius:5px;
+            box-shadow: 0 1px 1px black;
+            margin-bottom:20px;
+            opacity:0.9;
+        }
+        .contact-form .text-box:first-child{
+            margin-right:15px;
+        }
+        .contact-form textarea{
+            background:white;
+            color:grey;
+            border:none;
+            width:100%;
+            padding:12px;
+            font-size:15px;
+            min-height:200px;
+            max-height:400px;
+            resize:vertical;
+            border-radius:5px;
+            box-shadow: 0 1px 1px black;
+            margin-bottom:20px;
+            opacity:0.9;
+        }
+        .contact-form .send-btn{
+            float:right;
+            background:white;
+            color:rgb(72, 80, 80);
+            border:none;
+            width:120px;
+            height:40px;
+            font-size:15px;
+            font-weight:600;
+            text-transform:uppercase;
+            letter-spacing:2px;
+            border-radius:5px;
+            cursor:pointer;
+
+        }
+        iframe{
+            resize:vertical;
+        }
+
     </style>
 </head>
 <body>
@@ -38,61 +115,91 @@
                 <li><a href="Pricing.html">Pricing</a></li>
                 <li><a href="Contact.html">Contact us </a></li>
             </ul>
-            <section class="contactus">
-                </div class="communication">
-                   <h2 class="text-center">Contact form</h2>
-                   </div>
+            <section>
+            <div class="contact-section">
+                <div class="contact-info">
+                    <div><i class="fa  fa-map-marker"></i>Magjistralja,Prishtine,Kosovo </div>
+                    <div><i class="fas fa-envelope"></i>Palette@gmail.com </div>
+                    <div><i class="fas fa-phone"></i>+38349567328 </div>
+                    <div><i class="fas fa-clock"></i>Mon-Fri 8:00 AM to 5:00 PM </div>
+                </div>
                 <div class="contact-form">
-                    <form action="#">
-                        <label for="fname">First Name</label>
-                        <input type="text" name="firstname" required="required">
-
-                        <label for="lname">Last Name</label>
-                        <input type="text" name="lastname" required="required">
-
-                        <label for="email">Email</label>
-                        <input type="email" name="firstname" required="required" placeholder="your email...">
-                        <div class="InputBox">
-                            <span>Tybe your Message...</span>
-                            <textarea required="required"></textarea>
-                        </div>
-                        <div class="InputBox">
-                            <input type="submit" name="" value="Send">
-                            
-                        </div>
-                     </section>
-                     <section class="contactus1">
-                    </div class="communication1">
-                       </div>
-                    <div class="contact-form1">
-                        <form action="#">
-                            <div class="box">
-                                <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i> </div>
-                                <div class="text">
-                                    <adress>
-                                    <p>Prishtine , <br>Magjistralja Prishtine,<br> 100000 </p>
-                                    </adress>
-                                </div>
-                                <div class="box">
-                                <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i> </div>
-                                <div class="text">
-                                    <h3>Phone</h3>
-                                    <p>+38349578456</p>
-                                </div>
-                            </div>
-                            <div class="box">
-                                <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i> </div>
-                                <div class="text">
-                                    <h3>Email</h3>
-                                    <p> Palette@desing.org </p>
-                                </div>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2937.9534326042776!2d21.127524415424357!3d42.577510879172856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13549d24b348938d%3A0x60d92d0bf422400f!2sRruga%20Magjistralja%20Prishtin%C3%AB-Ferizaj!5e0!3m2!1sen!2srs!4v1638116397373!5m2!1sen!2srs" width="200" height="125" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                        </div>
+                    <h2>Contact Us</h2>
+                    <form class="contact" action="" method="post">
+                        <input type="text" name="name" class="text-box" placeholder="Your Name" required>
+                        <input type="email" name="email" class="text-box" placeholder="Your Email" required>
+                        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                        <input type="submit" name="submit" class="send-btn" value="send">
                     </div>
-                </form>
-                            
-                                
-                            </div>
-                            <br>
-                         </section>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2937.9534326042776!2d21.127524415424357!3d42.577510879172856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13549d24b348938d%3A0x60d92d0bf422400f!2sRruga%20Magjistralja%20Prishtin%C3%AB-Ferizaj!5e0!3m2!1sen!2srs!4v1638116397373!5m2!1sen!2srs" width="250" height="160" style="border: 2px;;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+
+                    </form>
+            
+                </section>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                
+
+            <footer>
+                <section class="footer">
+                    <div class="social">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-snapchat"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        
+                    </div>
+                    <ol class="listat">
+                        <li> 
+                            <a href="palette.html">Home</a>
+                        </li>
+                        <li> 
+                          <a href="services.html">Services</a>
+                      </li>
+                      <li> 
+                          <a href="DesignIdeas.html">Design ideas</a>
+                      </li>
+                      <li> 
+                          <a href="Pricing.html">Pricing</a>
+                      </li>
+                      <li> 
+                          <a href="Contact.html">Contact Us</a>
+                      </li>
+  
+  
+                    </ol>
+                    <p class="copyright">
+                        Palette @ 2021
+                    </p>
+                </section>
+            </footer>
+          </body>
+                    </head>
+                    </html>
          

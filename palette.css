@@ -56,7 +56,6 @@ ul li a{
     font-size: 30px;
     color: white;
     letter-spacing: 15px;
-    cursor: pointer;
 }
 .description {
     position: absolute;
@@ -137,7 +136,7 @@ section{
 .samples{
     flex-direction: column;
     text-align: center;
-    background-color: palevioletred;
+    background-color:#303c1abb;
     background-position: center;
     background-repeat:repeat;
     background-size:cover;
@@ -181,7 +180,7 @@ section{
     transition: all ease 0.5s;
 }
 .Work a{
-    color:darkslategrey;
+    color:whitesmoke;
 }
 .story-section{
     display:flex;
@@ -218,19 +217,20 @@ section{
     float:right;
 }
 .tables {
-    background-color:rgb(140, 209, 140);
+    background-color:#3c4b21b7;
     background-position:center;
     background-size:cover;
     height:300vh;
+    width:100;
 }
 .tables h3 {
-    text-align:left;
+    text-align:RIGHT;
     font-size:20px;
     background-color:rgba(51, 82, 51, 0.466);
     color:black
 }
 .tables p {
-    text-align: left;
+    text-align:right;
     font-size:20px;
     color:black;
 }
@@ -263,39 +263,6 @@ section{
 .social a:hover{
     opacity:0.9;
 }
-.communication{
-    width:88%;
-    margin: 0 auto;
-    padding:1%;
-}
-.text-center {
-    text-align:center;
-    color:white;
-    letter-spacing:7px;
-}
-.contactus {
-    background-color:grey;
-    padding:4% 0;
-}
-.contact-form{
-    width:43%;
-    margin:1%;
-    padding:2%;
-    float:left;
-    background-color:whitesmoke;
-    border-radius:15px;
-}
-
- input[type=text],select,textarea {
-     width:100%;
-     padding:12px;
-     border:1px solid white;
-     border-radius:5px;
-     box-sizing:border-box;
-     margin-top:6px;
-     margin-bottom:16px;
-     resize:vertical;
- }
 
 .footer ol {
     margin-top:0;
