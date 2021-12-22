@@ -288,6 +288,8 @@ section{
     color:rgb(40, 66, 40);
     font-family: monospace;
     font-weight:20px;
+    column-count:2;
+    column-gap:400px;
 }
 @font-face {
     font-family:TwinkleStar;
@@ -352,8 +354,31 @@ section{
     font-size:15px;
     color:darkslategrey;
 }
-
-
+section .wave {
+    position:absolute;
+    top:-100px;
+    left:0;
+    width:100%;
+    height:100px;
+    background:#eff1ef url(wave.png);
+    background-size: 1000px 100px;
+}
+ section .wave#wave1 {
+    z-index:1000;
+    opacity:1;
+    bottom:0;
+    animation:animatewave 4% linear infinte;
+}
+@keyframes animatewave {
+    0%
+    {
+        background-position-x:1000px;
+    }
+    100%{
+        background-position-x:0px;
+    }
+    
+}
 
 
 
