@@ -8,6 +8,7 @@
     background-image: linear-gradient(rgba(0,0,0,0.5 ),rgba(0,0,0,0.5)),url(Foto1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: scroll;
     background-position: center;
     height: 100vh;
 }
@@ -17,6 +18,7 @@ ul{
     list-style-type:none;
     margin-top:25px;
 }
+
 ul li {
     display:inline-block;
     font-size:20px;
@@ -49,6 +51,21 @@ ul li a{
     letter-spacing: 10px;
     text-shadow: 0 0 5px #154b0f;
 }
+@keyframes text {
+    0%{
+        color:blanchedalmond;
+        margin-bottom:-40px;
+    }
+    30%{
+        letter-spacing:30px;
+        margin-bottom:-40px;
+    }
+    85%{
+        letter-spacing:8px ;
+        margin-bottom:-40px;
+    }
+
+}
 .palette {
     position: absolute;
     top: 38%;
@@ -56,6 +73,7 @@ ul li a{
     font-size: 30px;
     color: white;
     letter-spacing: 15px;
+    animation : text  5s 1;
 }
 .description {
     position: absolute;
@@ -107,7 +125,7 @@ section{
     .row {
         display: flex;
         text-align: center;
-        padding: 10px;
+        padding: 2px;
         width: auto;
     }
 .service{
@@ -117,6 +135,10 @@ section{
     font-size:20px;
     border:double;
     cursor:pointer;
+    outline-style: outset;
+    outline-color:rgba(36, 82, 36, 0.493);
+    outline-width:5px;
+    outline-offset:3px;
     background:#465231d0;
     background-position: cover;
 }
@@ -176,10 +198,12 @@ section{
     border-radius:20px;
     opacity:0.9;
 }
-.work img:hover{
+.Work img:hover{
     cursor:pointer;
     transform:translateY(-15px);
-    transition: all ease 0.5s;
+    transform: rotate(20deg);
+    transition:all ease 0.3s;
+    opacity:1;
 }
 .Work a{
     color:whitesmoke;
@@ -222,15 +246,16 @@ section{
 .tables {
     padding-left:40px;
     padding-right:30px;
-    height:340vh;
+    height:360vh;
     width:200;
 }
 .tables h2{
     text-align:center;
     font-size:30px;
     color:white;
+    font-family:TwinkleStar;
     letter-spacing:8px;
-    background-color: rgba(52, 59, 48, 0.616);
+    background-color: rgba(153, 196, 129, 0.432);
 }
     
 .tables h3 {
@@ -263,6 +288,11 @@ section{
     color:rgb(40, 66, 40);
     font-family: monospace;
     font-weight:20px;
+}
+@font-face {
+    font-family:TwinkleStar;
+    src: url(TwinkleStar.ttf);
+    font-weight:bold;
 }
 
 .footer{
