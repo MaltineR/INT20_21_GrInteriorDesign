@@ -3,10 +3,29 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>DesignIdeas</title>
+    <title>Pricing</title>
     <link rel="stylesheet" href="palette.css" />
     <script src="https://kit.fontawesome.com/ccbf4afaaa.js" crossorigin="anonymous"></script>
     <style>
+        .tables{
+    background-color:rgba(254, 255, 253, 0.877);
+    height:360vh;
+    padding-top: 75px;
+    background-image : linear-gradient(45deg,rgba(77, 85, 60, 0.877) ,rgba(121, 134, 93, 0.877)  ,#5c754b  ,#90e095 );
+    background-size: 600% 600%;
+    animation: animate 7s infinite linear;
+        }
+        @keyframes animate {
+   0%{
+ background-position:0% 85% ;
+}
+50%{
+    background-position:100% 20%;
+}
+100%{
+    background-position: 0% 85%;
+}
+        }
             .content-table2 {
             position: absolute;
             left:20%;
@@ -97,9 +116,6 @@
             .content-table4 tbody tr th {
                 background-color:rgb(251, 255, 251);
             }
-            
-        
-        
         </style>
 </head>
 <body>
@@ -116,7 +132,9 @@
             </ul>
     </header>
              <section class="tables" id="tabel">
-                 <div class="wave"></div>
+                 <div class="box">
+                     <div class="single-box" style="background-image:url(wave.png)"></div>
+                 </div>
                  <div>
                      <h2>Pricing tables </h2>
                      <dl>
@@ -130,8 +148,7 @@
                         <li>Designer Fee</li>
                         <li>Diamond Design Pacage</li>
                     </ol>
-                
-                <i><h3>Interior Designer Hourly Rate  </h3></i>          
+                 <i><h3>Interior Designer Hourly Rate  </h3></i>          
                 <p>The more experience interior designers have, the more they will charge per hour.
                     In addition to consultation and design work,<br> there are additional service charges for travel, 
                     deposits, communication minutes, and purchase fees.
