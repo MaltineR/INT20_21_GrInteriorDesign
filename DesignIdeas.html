@@ -5,23 +5,16 @@
     <meta charset="utf-8" />
     <title>DesignIdeas</title>
     <link rel="stylesheet" href="palette.css" />
+    <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/ccbf4afaaa.js" crossorigin="anonymous"></script>
-    <script>
-        function allowDrop(ev) {
-ev.preventDefault();
-}
-
-function drag(ev) {
-ev.dataTransfer.setData("text", ev.target.id);
-}
-
-function drop(ev) {
-ev.preventDefault();
-var data = ev.dataTransfer.getData("text");
-ev.target.appendChild(document.getElementById(data));
-}
-    </script>
     <style>
+        .video{
+            background-color:rgba(212, 149, 104, 0.692);
+            border:solid rgba(31, 30, 30, 0.658);
+        }
+        div.center{
+            text-align:center;
+        }
         .Drag{
             height:65vh;
             width:100%;
@@ -48,7 +41,7 @@ ev.target.appendChild(document.getElementById(data));
     background-size:cover;
     background-position: center;
     height:100%;
-    padding-top: 75px;
+    padding-top: 60px;
         }
     </style>
 </head>
@@ -71,6 +64,9 @@ ev.target.appendChild(document.getElementById(data));
                     <h2 Align ="center">Our Designs</h2>
                     <p >Take A Look At Our Featured Pics</p>
                 </div>
+                <br>
+                <br>
+                
                 <div class="Featured">
                     <div class="Work">
                         <figure>
@@ -146,6 +142,14 @@ When u drag the image to the second square you can see
                 </div>
                 <div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                 </div>
+            </section>
+            <section class="video">
+                <div class="center">
+                <video  style="border:solid black"                width="500" height="240" controls>
+                    <source src="video.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+                  <figcaption style="color:rgb(19, 18, 18);letter-spacing:5px;">Choose Cohesive Home Color PALETTE</figcaption>
             </section>
             <footer>
                 <section class="footer">

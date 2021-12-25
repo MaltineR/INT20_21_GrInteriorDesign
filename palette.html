@@ -6,13 +6,29 @@
     <title>Palette</title>
     <link rel="stylesheet" href="palette.css" />
     <script src="https://kit.fontawesome.com/ccbf4afaaa.js" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
+    
+    
     <style> 
         h2{text-align:center;letter-spacing:15px;}
         p {font-size:13px;float:left;}
+        audio{
+            position:absolute;
+            top:190%;
+            left:50%;
+        }
+        p1{
+            color:white;
+            font-size:30px;
+            position: absolute;
+            top:180%;
+            left:30%;
+            
+        }
         </style>
+       
 </head>
 <body>
+    <script src="script.js"></script>
     <header>
         <!--Home-->
         <div class="top-background">
@@ -52,6 +68,13 @@
         <img src=9.jpg alt="illustration" width="40%" height="30%">
     </div>
         </div>
+        </section>
+        <section>
+            <canvas id="canvas" width="1520" height="190" ></canvas>
+            <p1>Here u can hear more about us</p1>
+            <audio controls>
+                 <source src="Audio/audio.mp3" type="audio/mpeg">
+              </audio>
         </section>
         <!--Footer-->
         

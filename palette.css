@@ -3,6 +3,9 @@
     margin: 0;
     padding:0;
 }
+#canvas{
+    background-color: rgba(216, 136, 71, 0.459);
+}
 
 .top-background {
     background-image: linear-gradient(rgba(0,0,0,0.5 ),rgba(0,0,0,0.5)),url(Foto1.jpg);
@@ -188,6 +191,10 @@ ul li a{
     max-height:auto;
     border-radius:20px;
     opacity:0.9;
+    outline-style: outset;
+    outline-color:rgba(10, 10, 10, 0.493);
+    outline-width:3px;
+    outline-offset:24px;
 }
 .Work img:hover{
     cursor:pointer;
