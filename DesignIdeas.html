@@ -6,7 +6,43 @@
     <title>DesignIdeas</title>
     <link rel="stylesheet" href="palette.css" />
     <script src="https://kit.fontawesome.com/ccbf4afaaa.js" crossorigin="anonymous"></script>
+    <script>
+        function allowDrop(ev) {
+ev.preventDefault();
+}
+
+function drag(ev) {
+ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+ev.preventDefault();
+var data = ev.dataTransfer.getData("text");
+ev.target.appendChild(document.getElementById(data));
+}
+    </script>
     <style>
+        .Drag{
+            height:65vh;
+            width:100%;
+            background-color: rgb(247, 245, 238);
+
+        }
+        .Drag img{
+            height:200px;
+            width:200px;
+        }
+
+        #div1, #div2 ,#div3, #div4 { 
+             float:left;
+             padding:10px;
+             margin:10px;
+             border:black dashed;
+         }
+         #div1{ background-color:#ca643c9d; width:200px; height:200px;  }
+         #div2{ background-color: #aa9bd8ab; width:200px; height:200px; }
+         #div3{ background-color: #466830b2; width:200px; height:200px; }
+         #div4{ background-color: #cc55aea2; width:200px; height:200px; }
         section{
     background-color:rgba(90, 100, 70, 0.877);
     background-size:cover;
@@ -92,7 +128,25 @@
                 </div>
             </section>
             <!--COLORS SECTION-->
-            <section 
+            <section class="Drag">
+                <div>
+                    <h2 style="color:rgba(244, 247, 242, 0.733);text-align:center ; letter-spacing:7px ;
+                    font-size:33px;text-shadow:2px 1px 2px #081605fd;">Colors matching</h2>
+<p style="color:rgb(248, 242, 242);text-align:center ; font-size:20px;letter-spacing:3px ;text-shadow:2px 1px 2px #13331b;background-color: rgba(44, 78, 34, 0.671);">We can show you how the matching colors works
+When u drag the image to the second square you can see 
+ it looks way more beautiful that is  how we know to work with colors.</p>
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="design.png" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">
+</div>
+
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </div>
+                <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </div>
+                <div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </div>
+            </section>
             <footer>
                 <section class="footer">
                     <div class="social">
