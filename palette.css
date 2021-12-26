@@ -198,11 +198,12 @@ ul li a{
 }
 .Work img:hover{
     cursor:pointer;
-    transform:translateY(-15px);
-    transform: rotate(20deg);
+    transform: rotate(15deg);
     transition:all ease 0.3s;
     opacity:1;
+    -webkit-transform: scale(1.2); 
 }
+
 .Work a{
     color:whitesmoke;
 }
