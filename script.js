@@ -18,16 +18,16 @@ function allowDrop(ev) {
         var canvas = document.getElementById("canvas");
         var ctx = canvas.getContext("2d");
         ctx.beginPath();
-        ctx.arc(75, 75, 50, 0, Math.PI * 2, true); // Outer circle
+        ctx.arc(75, 75, 50, 0, Math.PI * 2, true); 
         ctx.moveTo(110, 75);
-        ctx.arc(75, 75, 35, 0, Math.PI, false);  // Mouth (clockwise)
+        ctx.arc(75, 75, 35, 0, Math.PI, false); 
         ctx.moveTo(65, 65);
-        ctx.arc(60, 65, 5, 0, Math.PI * 2, true);  // Left eye
+        ctx.arc(60, 65, 5, 0, Math.PI * 2, true); 
         ctx.moveTo(95, 65);
-        ctx.arc(90, 65, 5, 0, Math.PI * 2, true);  // Right eye
+        ctx.arc(90, 65, 5, 0, Math.PI * 2, true);  
         ctx.stroke();
     }
-    //colors 
+               //colors 
     // function funcClick () {
     //     var array=[red,pink,blue,green,beige,white,black];
     //     var i;
@@ -36,7 +36,7 @@ function allowDrop(ev) {
     //         text+=array[i]+"<br>";
     //     }
     //     x.innerHTML=text;
-    //clock
+             //clock
     //  window.onload = function showTime(){
     //     var date = new Date();
     //     var h = date.getHours(); // 0 - 23
