@@ -10,11 +10,11 @@
     <style>
         .tables{
     background-color:rgba(254, 255, 253, 0.877);
-    height:360vh;
+    height:250vh;
     padding-top: 75px;
-    background-image : linear-gradient(45deg,rgba(152, 235, 119, 0.877) ,rgba(231, 166, 141, 0.877)  ,#c77d7d  ,#f1c7c7 );
+    background-image : linear-gradient(45deg,rgba(47, 71, 38, 0.712) ,rgba(81, 122, 35, 0.87)  ,#b7e283  ,#e1eeb4 );
     background-size: 600% 600%;
-    animation: animate 7s infinite linear;
+    animation: animate 5s infinite linear;
         }
         @keyframes animate {
    0%{
@@ -88,35 +88,7 @@
             .content-table3 tbody tr :last-of-type{
                 border-bottom:2px solid white;
             }
-            .content-table4 {
-            position: absolute;
-            left:40%;
-            border: 1px solid black;
-            margin : 40px 0;
-            font-size:15px;
-            min-width:400px;
-            text-align: center;
-            border-radius:5px;
-            border-style: solid;
-        }
-            .content-table4 thead tr {
-            background-color:rgba(62, 75, 52, 0.719);
-            color:white;
-            text-align:center;
-            font-weight:bold;
-            }
-            .content-table4 th,
-            .content-table4 td {
-                padding: 12px 15px;
-            }
-
-            .content-table4 tbody tr :last-of-type{
-                color:black;
-                border-bottom:2px solid white;
-            }
-            .content-table4 tbody tr th {
-                background-color:rgb(251, 255, 251);
-            }
+           
         </style>
 </head>
 <body>
@@ -310,6 +282,71 @@
             
                                     </tbody>  
                     </table>
+             </section>
+             <section class=Fabrics>
+                <article>
+                    Search if your desire fabrics are here
+                </article>
+
+                <hr class="hr">
+                <label for="myFabrics">Enter a fabric</label>
+                <input type="text" name="myFabrics" id="myFabrics" list="fabriclist">
+                <datalist id="fabriclist">
+                    <option>Cotton</option>
+                    <option>Leather</option>
+                    <option>Silk</option>
+                </datalist>
+             </section>
+             <section>
+                <div class="maltiner">
+                    <header class="main-header clearfix">
+                        <h1 class="name" style="color:rgba(236, 141, 106, 0.801)">Types of  Fabrics </h1>
+                    </header>
+                <div class="content clearfix">
+
+                    <div class="cube-container">
+                        <div class="photo-cube">
+        
+                            <img class="front" src="cotton1.jpg" alt="">
+                            <div class="back photo-desc">
+                              <h3 style="color:black">Cotton</h3>
+                              <p style="color:black"> Known as the most popular material in the world, cotton is a light, soft natural fabric. The fluffy fiber is extracted from the seeds of the cotton plant in a process called ginning.</p>
+                            </div>
+                            <img class="left" src="cotton1.jpg" alt="">
+                            <img class="right" src="cotton1.jpg" alt="">
+        
+                        </div>
+                    </div>
+                    <div class="cube-container">
+                        <div class="photo-cube">
+        
+                            <img class="front" src="leather.jpg" alt="">
+                            <div class="back photo-desc">
+                              <h3 style="color:black">Leather</h3>
+                              <p style="color:black">Leather is a strong, flexible and durable material obtained from the tanning, or chemical treatment, of animal skins and hides to prevent decay..</p>
+                            </div>
+                            <img class="left" src="leather.jpg" alt="">
+                            <img class="right" src="leather.jpg" alt="">
+        
+                        </div>
+                    </div>	
+        
+                    <div class="cube-container">
+                        <div class="photo-cube">
+        
+                            <img class="front" src="silk.png" alt="">
+                            <div class="back photo-desc">
+                              <h3 style="color:black">Silk</h3>
+                              <p style="color:rgb(14, 13, 14)">The fabric has a shimmering appearance, though has interrupting patterns of weave due to its natural fibre.</p>
+                            </div>
+                            <img class="left" src="silk.png" alt="">
+                            <img class="right" src="silk.png" alt="">
+        
+                        </div>
+                    </div>	
+        
+                </div>
+            </div>
              </section>
 <footer>
     <section class="footer">
