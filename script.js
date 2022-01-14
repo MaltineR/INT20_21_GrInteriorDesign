@@ -59,7 +59,7 @@ var countDownDate = new Date("Jan 31, 2022 16:37:52").getTime();
         document.getElementById("end").innerHTML = "TIME UP!!";
     }
     }, 1000);
-//what is palette
+//what forms
 $(document).ready(function(){
   $("button1").click(function(){
     var div = $("div2");  
@@ -68,12 +68,6 @@ $(document).ready(function(){
   });
 });
 
- //colors 
-
- function myFunction() {
-
-  document.getElementById("demo").innerHTML = "Red,White,black,brown,black";
-}
 //questions
 $(document).ready(function(){
   $("#question-title").click(function(){
@@ -94,13 +88,13 @@ $(document).ready(function(){
 $(document).ready(function(){
   $("p5").on({
     mouseenter: function(){
-      $(this).css("background-color", "lighpink");
+      $(this).css("background-color", "lightgreen");
     },  
     mouseleave: function(){
       $(this).css("background-color", "lightblue");
     }, 
     click: function(){
-      $(this).css("background-color", "purple");
+      $(this).css("background-color", "pink");
     }  
   });
 });
