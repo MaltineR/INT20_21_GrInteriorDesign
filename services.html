@@ -5,8 +5,8 @@
     <meta charset="utf-8" />
     <title>Services</title>
     <link rel="stylesheet" href="palette.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/ccbf4afaaa.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
     
     <style>
          section{
@@ -105,11 +105,11 @@
                         <div class="section-senter">
                             <!--Single question-->
                             <article class="question">
-                                <div class="question-title">
+                                <div id="question-title">
                                     <p>How can you design small spaces?</p>
                                     
                                 </div>
-                                <div class="question-text">
+                                <div id="question-text">
                                     <p>
                                         In a long living room, breakdown the space by making three separate seating areas with pieces of furniture that are small in scale
 Use light color paint on the wall to make the space look bigger
@@ -119,11 +119,11 @@ Use light color paint on the wall to make the space look bigger
                             <!--END-->
                              <!--Single question-->
                               <article class="question">
-                                <div class="question-title">
+                                <div id="question-title2">
                                     <p>What is a good way of using lights in your room??</p>
                                     
                                 </div>
-                                <div class="question-text">
+                                <div id="question-text2">
                                     <p>
                                         A good way of using lights in the room is to use 80% of lights overhead, and 20% of light should be a free stand or wall mounted
                                     </p>
@@ -132,10 +132,10 @@ Use light color paint on the wall to make the space look bigger
                             <!--END-->
                              <!--Single question-->
                               <article class="question">
-                                <div class="question-title">
+                                <div id="question-title3">
                                     <p>What is your preferred type of wood when designing a space?</p>
                                 </div>
-                                <div class="question-text">
+                                <div id="question-text3">
                                     <p>
                                         When designing an office space woods like Oak, Mahogany and Cherry would be a good choice.
                                     </p>
@@ -144,11 +144,13 @@ Use light color paint on the wall to make the space look bigger
                             <!--END-->
                         </div>
                     </section>
-                   <!-- <section>
-                        <p id="mypara">Here are all the colors that we have</p>
-                        <button type="button" onclick="funcClick ()">Colors</button> 
-                    </section> 
                     <section>
+                        <button onclick="myFunction()">Colors that we have </button>
+
+                                <p id="demo"></p>
+                    </section> 
+                    
+                   <!-- <section>
                         <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
                     </section>-->
                     <!--<section>
@@ -201,4 +203,7 @@ Use light color paint on the wall to make the space look bigger
                             </p>
                         </section>
                     </footer>
+                    <script  type="text/javascript" src="script.js"></script>
+</body>
+</html>
                  
