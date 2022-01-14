@@ -28,21 +28,6 @@ function allowDrop(ev) {
         ctx.stroke();
     }
 
-//Location 
-    var x = document.getElementById("location");
-
-function getLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition);
-  } else { 
-    x.innerHTML = "Geolocation is not supported by this browser.";
-  }
-}
-
-function showPosition(position) {
-  x.innerHTML = "Latitude: " + position.coords.latitude + 
-  "<br>Longitude: " + position.coords.longitude;
-}
 //countdown counter 
 var countDownDate = new Date("Jan 31, 2022 16:37:52").getTime();
 
@@ -74,22 +59,6 @@ var countDownDate = new Date("Jan 31, 2022 16:37:52").getTime();
         document.getElementById("end").innerHTML = "TIME UP!!";
     }
     }, 1000);
-//startworker 
-let w;
-
-function startWorker() {
-  if(typeof(w) == "undefined") {
-    w = new Worker("demo_workers.js");
-  }
-  w.onmessage = function(event) {
-    document.getElementById("result").innerHTML = event.data;
-  };
-}
-
-function stopWorker() { 
-  w.terminate();
-  w = undefined;
-}
 //what is palette
 $(document).ready(function(){
   $("button1").click(function(){
@@ -125,89 +94,32 @@ $(document).ready(function(){
 $(document).ready(function(){
   $("p5").on({
     mouseenter: function(){
-      $(this).css("background-color", "lightgray");
+      $(this).css("background-color", "lighpink");
     },  
     mouseleave: function(){
       $(this).css("background-color", "lightblue");
     }, 
     click: function(){
-      $(this).css("background-color", "yellow");
+      $(this).css("background-color", "purple");
     }  
   });
 });
-    // function funcClick () {
-    //     var array=[red,pink,blue,green,beige,white,black];
-    //     var i;
-    //     var text=" ";
-    //     for(i=0;i<array.length;i++){
-    //         text+=array[i]+"<br>";
-    //     }
-    //     x.innerHTML=text;
-    //   }
+//WHAT WE OFFER
+$(document).ready(function(){  
+  $("#btn2").click(function(){  
+      $("ol1").append("<li><b>CONCEPTS FROM MULTIPLE TOP DESIGNERS</b></li>");  
+           $("ol1").append("<li><b>ONE-ON-ONE INTERIOR DESIGN CONSULTATION</b></li>");
+           $("ol1").append("<li><b>3D MODEL OF YOUR SPACE</b></li>"); 
+            $("ol1").append("<li><b>COLOR PALETTE AND FLOOR PLAN</b></li>");  
+
+  });  
+});  
+
       
 
 
-             //clock
-    //  window.onload = function showTime(){
-    //     var date = new Date();
-    //     var h = date.getHours(); // 0 - 23
-    //     var m = date.getMinutes(); // 0 - 59
-    //     var s = date.getSeconds(); // 0 - 59
-    //     var session = "AM";
-        
-    //     if(h == 0){
-    //         h = 12;
-    //     }
-        
-    //     if(h > 12){
-    //         h = h - 12;
-    //         session = "PM";
-    //     }
-        
-    //     h = (h < 10) ? "0" + h : h;
-    //     m = (m < 10) ? "0" + m : m;
-    //     s = (s < 10) ? "0" + s : s;
-        
-    //     var time = h + ":" + m + ":" + s + " " + session;
-    //     document.getElementById("MyClockDisplay").innerText = time;
-    //     document.getElementById("MyClockDisplay").textContent = time;
-        
-    //     setTimeout(showTime, 1000);
-        
-    // }
-    
-    // showTime();
-
-    //COUNTDOWN 
-    
-// var countDownDate = new Date("Dec 27, 2021 15:06:25").getTime();
-
-
-// var x = setInterval(function() {
-
-
-//   var now = new Date().getTime();
     
 
-//   var distance = countDownDate - now;
-    
-
-//   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-//   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-//   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-//   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-
-//   document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-//   + minutes + "m " + seconds + "s ";
-    
-
-//   if (distance < 0) {
-//     clearInterval(x);
-//     document.getElementById("demo").innerHTML = "EXPIRED";
-//   }
-// }, 1000);
-// //testimonials
 
 
 
