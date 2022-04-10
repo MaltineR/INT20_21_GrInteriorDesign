@@ -46,6 +46,7 @@ ul li a{
     margin:auto;
 }
 .page-title {
+	right:70;
     position: absolute;
     top: 30%;
     left: 10%;
